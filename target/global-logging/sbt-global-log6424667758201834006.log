@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run --limit 5 scala, Some(fab3f5d6-4a12-41fe-9a5c-e2efed4df615), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to E:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\target\scala-2.12\classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed 18 mai 2024, 15:27:39[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
