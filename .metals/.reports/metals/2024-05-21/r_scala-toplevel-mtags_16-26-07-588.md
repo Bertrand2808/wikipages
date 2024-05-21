@@ -1,12 +1,12 @@
-import scopt.OParser
+error id: file:///E:/Documents_HDD/ssd/Cours_ESGI/M1/Scala/Exam_Scala/wikipages/src/main/scala/Main.scala:[155..161) in Input.VirtualFile("file:///E:/Documents_HDD/ssd/Cours_ESGI/M1/Scala/Exam_Scala/wikipages/src/main/scala/Main.scala", "import scopt.OParser
 import scalaj.http._
 import play.api.libs.json.{Json, JsArray}
 
 case class Config(limit: Int = 10, keyword: String = "")
-case class WikiPage(title: String, words: Int)
+case class 
 
 object Main extends App {
-  println("Les dependances sont bien ajoutees et importees!")
+  println("Les dépendances sont bien ajoutées et importées!")
   parseArguments(args) match {
     case Some(config) => run(config)
     case _            => println("Unable to parse arguments")
@@ -43,23 +43,21 @@ object Main extends App {
     }
   }
 
-  def parseJson(rawJson: String): Seq[WikiPage] = {
-    val json = Json.parse(rawJson)
-    val pages = (json \ "query" \ "search").as[JsArray]
-    pages.value.map { page =>
-      val title = (page \ "title").as[String]
-      val words = (page \ "wordcount").as[Int]
-      WikiPage(title, words)
-    }
-  }
+  def parseJson(rawJson: String): Seq[]
 
   def run(config: Config): Unit = {
     val url = formatUrl(config.keyword, config.limit)
     getPages(url) match {
       case Left(errorCode) => println(s"Error occurred with code: $errorCode")
-      case Right(body) =>
-        val pages = parseJson(body)
-        pages.foreach(page => println(s"${page.title} - ${page.words} words"))
+      case Right(body) => println(body)
     }
   }
 }
+")
+file:///E:/Documents_HDD/ssd/Cours_ESGI/M1/Scala/Exam_Scala/wikipages/src/main/scala/Main.scala
+file:///E:/Documents_HDD/ssd/Cours_ESGI/M1/Scala/Exam_Scala/wikipages/src/main/scala/Main.scala:8: error: expected identifier; obtained object
+object Main extends App {
+^
+#### Short summary: 
+
+expected identifier; obtained object
