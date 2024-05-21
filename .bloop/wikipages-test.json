@@ -1,0 +1,654 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "wikipages-test",
+        "directory": "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages",
+        "workspaceDir": "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages",
+        "sources": [
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\src\\test\\scala",
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\src\\test\\scala-2.12",
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\src\\test\\scala-2",
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\src\\test\\java",
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\target\\scala-2.12\\src_managed\\test"
+        ],
+        "dependencies": [
+            "wikipages"
+        ],
+        "classpath": [
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\.bloop\\wikipages\\scala-2.12\\classes",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.15\\scala-library-2.12.15.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalaj\\scalaj-http_2.12\\2.4.2\\scalaj-http_2.12-2.4.2.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\scopt\\scopt_2.12\\4.1.0\\scopt_2.12-4.1.0.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.12\\3.0.3\\play-json_2.12-3.0.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.2.11\\scalatest_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.12\\3.0.3\\play-functional_2.12-3.0.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.15\\scala-reflect-2.12.15.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_2.12\\3.2.11\\scalatest-core_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_2.12\\3.2.11\\scalatest-featurespec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_2.12\\3.2.11\\scalatest-flatspec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_2.12\\3.2.11\\scalatest-freespec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_2.12\\3.2.11\\scalatest-funsuite_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_2.12\\3.2.11\\scalatest-funspec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_2.12\\3.2.11\\scalatest-propspec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_2.12\\3.2.11\\scalatest-refspec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_2.12\\3.2.11\\scalatest-wordspec_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_2.12\\3.2.11\\scalatest-diagrams_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_2.12\\3.2.11\\scalatest-matchers-core_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_2.12\\3.2.11\\scalatest-shouldmatchers_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_2.12\\3.2.11\\scalatest-mustmatchers_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.11\\scalatest-compatible-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.2.11\\scalactic_2.12-3.2.11.jar",
+            "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.0.1\\scala-xml_2.12-2.0.1.jar"
+        ],
+        "out": "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\.bloop\\wikipages",
+        "classesDir": "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\.bloop\\wikipages\\scala-2.12\\test-classes",
+        "resources": [
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\src\\test\\resources",
+            "C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages\\target\\scala-2.12\\resource_managed\\test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.15",
+            "options": [
+                
+            ],
+            "jars": [
+                "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.15\\scala-library-2.12.15.jar",
+                "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.12.15\\scala-compiler-2.12.15.jar",
+                "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.15\\scala-reflect-2.12.15.jar",
+                "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
+                "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\jline\\jline\\2.14.6\\jline-2.14.6.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\adoptium\\temurin11-binaries\\releases\\download\\jdk-11.0.22%252B7\\OpenJDK11U-jdk_x64_windows_hotspot_11.0.22_7.zip\\jdk-11.0.22+7",
+                "options": [
+                    "-Duser.dir=C:\\Users\\Aurelien\\Documents\\cours\\scala\\projet soutenance\\wikipages"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.15\\scala-library-2.12.15.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.15\\scala-library-2.12.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalaj",
+                    "name": "scalaj-http_2.12",
+                    "version": "2.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalaj-http_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalaj\\scalaj-http_2.12\\2.4.2\\scalaj-http_2.12-2.4.2.jar"
+                        },
+                        {
+                            "name": "scalaj-http_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalaj\\scalaj-http_2.12\\2.4.2\\scalaj-http_2.12-2.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.scopt",
+                    "name": "scopt_2.12",
+                    "version": "4.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scopt_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\scopt\\scopt_2.12\\4.1.0\\scopt_2.12-4.1.0.jar"
+                        },
+                        {
+                            "name": "scopt_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\scopt\\scopt_2.12\\4.1.0\\scopt_2.12-4.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-json_2.12",
+                    "version": "3.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.12\\3.0.3\\play-json_2.12-3.0.3.jar"
+                        },
+                        {
+                            "name": "play-json_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-json_2.12\\3.0.3\\play-json_2.12-3.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-functional_2.12",
+                    "version": "3.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.12\\3.0.3\\play-functional_2.12-3.0.3.jar"
+                        },
+                        {
+                            "name": "play-functional_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\playframework\\play-functional_2.12\\3.0.3\\play-functional_2.12-3.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.15\\scala-reflect-2.12.15.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.15\\scala-reflect-2.12.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.14.3\\jackson-core-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.14.3\\jackson-annotations-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.14.3\\jackson-datatype-jdk8-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.14.3\\jackson-datatype-jsr310-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.14.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.14.3\\jackson-databind-2.14.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.15",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.15\\scala-library-2.12.15.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.15\\scala-library-2.12.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.2.11\\scalatest_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.2.11\\scalatest_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_2.12\\3.2.11\\scalatest-core_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-core_2.12\\3.2.11\\scalatest-core_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_2.12\\3.2.11\\scalatest-featurespec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-featurespec_2.12\\3.2.11\\scalatest-featurespec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_2.12\\3.2.11\\scalatest-flatspec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-flatspec_2.12\\3.2.11\\scalatest-flatspec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_2.12\\3.2.11\\scalatest-freespec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-freespec_2.12\\3.2.11\\scalatest-freespec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_2.12\\3.2.11\\scalatest-funsuite_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funsuite_2.12\\3.2.11\\scalatest-funsuite_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_2.12\\3.2.11\\scalatest-funspec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-funspec_2.12\\3.2.11\\scalatest-funspec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_2.12\\3.2.11\\scalatest-propspec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-propspec_2.12\\3.2.11\\scalatest-propspec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_2.12\\3.2.11\\scalatest-refspec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-refspec_2.12\\3.2.11\\scalatest-refspec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_2.12\\3.2.11\\scalatest-wordspec_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-wordspec_2.12\\3.2.11\\scalatest-wordspec_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_2.12\\3.2.11\\scalatest-diagrams_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-diagrams_2.12\\3.2.11\\scalatest-diagrams_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_2.12\\3.2.11\\scalatest-matchers-core_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-matchers-core_2.12\\3.2.11\\scalatest-matchers-core_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_2.12\\3.2.11\\scalatest-shouldmatchers_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-shouldmatchers_2.12\\3.2.11\\scalatest-shouldmatchers_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_2.12\\3.2.11\\scalatest-mustmatchers_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-mustmatchers_2.12\\3.2.11\\scalatest-mustmatchers_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.11\\scalatest-compatible-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest-compatible\\3.2.11\\scalatest-compatible-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.12",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.2.11\\scalactic_2.12-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalactic_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.2.11\\scalactic_2.12-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.0.1\\scala-xml_2.12-2.0.1.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\Aurelien\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.0.1\\scala-xml_2.12-2.0.1-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+[debug] [wikipages-test] Classpath dependencies List()
+[debug] [wikipages-test] Dependencies from configurations List(wikipages)
+[debug] Bloop wrote the configuration of project 'wikipages-test' to 'C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\.bloop\wikipages-test.json'
+[success] Generated .bloop\wikipages-test.json

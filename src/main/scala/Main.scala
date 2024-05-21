@@ -3,7 +3,7 @@ import scalaj.http._
 import play.api.libs.json.{Json, JsArray}
 
 case class Config(limit: Int = 10, keyword: String = "")
-case class WikiPage(title: String, words: Int)
+case class WikiPage(title: String, wordCount: Option[Int])
 
 object Main extends App {
   println("Les dependances sont bien ajoutees et importees!")
@@ -45,11 +45,11 @@ object Main extends App {
 
   def parseJson(rawJson: String): Seq[WikiPage] = {
     val json = Json.parse(rawJson)
-    val pages = (json \ "query" \ "search").as[JsArray]
+    val pages = (json \ "query" \ "search").asOpt[JsArray].getOrElse(Json.arr())
     pages.value.map { page =>
       val title = (page \ "title").as[String]
-      val words = (page \ "wordcount").as[Int]
-      WikiPage(title, words)
+      val wordCount = (page \ "wordcount").asOpt[Int]
+      WikiPage(title, wordCount)
     }
   }
 
@@ -59,7 +59,8 @@ object Main extends App {
       case Left(errorCode) => println(s"Error occurred with code: $errorCode")
       case Right(body) =>
         val pages = parseJson(body)
-        pages.foreach(page => println(s"${page.title} - ${page.words} words"))
+        pages.foreach(page => println(s"${page.title} - ${page.wordCount.getOrElse(0)} words"))
     }
   }
+
 }

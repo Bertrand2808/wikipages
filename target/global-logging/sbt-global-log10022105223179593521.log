@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(b1253871-097e-4c73-8d33-1cde0d50ba06), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\target\scala-2.12\test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMainSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA simple test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should pass when everything is OK[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mformatUrl[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should format the URL correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mparseJson[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should extract titles from JSON correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 482 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 3[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 3, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed 21 mai 2024 à 17:46:11[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
