@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MainSpec, org.scalatest.tools.Framework$$anon$1@6298f898, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MainSpec, org.scalatest.tools.Framework$$anon$1@1cc16283, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMainSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mA simple test[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should pass when everything is OK[0m[0m
@@ -13,10 +13,12 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return None for non-parsable arguments[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should parse arguments with a keyword correctly[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should parse arguments with a keyword and limit correctly[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 730 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetPages[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct response body for a successful request[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 432 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 9[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 8, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 9, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MainSpec[0m

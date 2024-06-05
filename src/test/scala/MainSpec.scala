@@ -2,6 +2,7 @@
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import play.api.libs.json._
+import scalaj.http._
 
 class MainSpec extends AnyFlatSpec with Matchers {
 
@@ -65,5 +66,18 @@ class MainSpec extends AnyFlatSpec with Matchers {
   it should "parse arguments with a keyword and limit correctly" in {
     val args = Array("-l", "5", "keyword")
     Main.parseArguments(args) shouldBe Some(Config(keyword = "keyword", limit = 5))
+  }
+
+  object MockHttpUtils extends HttpUtils {
+    override def get(url: String): HttpRequest = new HttpRequest("mock-url", "GET", null, Seq(), Seq(), Seq(), None, "UTF-8", 4096, _.toString, false, None) {
+      override def asString: HttpResponse[String] = {
+        HttpResponse("""{"query": {"search": [{"title": "Mock Page 1", "wordcount": 100}]}}""", 200, Map.empty)
+      }
+    }
+  }
+
+  "getPages" should "return the correct response body for a successful request" in {
+    val url = "https://mockurl"
+    Main.getPages(url, MockHttpUtils) shouldEqual Right("""{"query": {"search": [{"title": "Mock Page 1", "wordcount": 100}]}}""")
   }
 }

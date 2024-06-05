@@ -37,8 +37,8 @@ object Main extends App {
     s"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=&sroffset=0&list=search&srsearch=$keyword&srlimit=$limit"
   }
 
-  def getPages(url: String): Either[Int, String] = {
-    val response = Http(url).asString
+  def getPages(url: String, httpUtils: HttpUtils): Either[Int, String] = {
+    val response = httpUtils.get(url).asString
     response.code match {
       case 200       => Right(response.body)
       case errorCode => Left(errorCode)
@@ -63,7 +63,7 @@ object Main extends App {
 
   def run(config: Config): Unit = {
     val url = formatUrl(config.keyword, config.limit)
-    getPages(url) match {
+    getPages(url, RealHttpUtils) match {
       case Left(errorCode) => println(s"Error occurred with code: $errorCode")
       case Right(body) =>
         val pages = parseJson(body)
