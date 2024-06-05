@@ -37,4 +37,33 @@ class MainSpec extends AnyFlatSpec with Matchers {
     
     titles shouldEqual expectedTitles
   }
+
+  "totalWords" should "return 0 for an empty list" in {
+    val pages = Seq.empty[WikiPage]
+    Main.totalWords(pages) shouldEqual 0
+  }
+
+  it should "return the correct total word count for a non-empty list" in {
+    val pages = Seq(
+      WikiPage("Page1", Some(100)),
+      WikiPage("Page2", Some(200)),
+      WikiPage("Page3", Some(300))
+    )
+    Main.totalWords(pages) shouldEqual 600
+  }
+
+  "parseArguments" should "return None for non-parsable arguments" in {
+    val args = Array("--invalid", "arg")
+    Main.parseArguments(args) shouldBe None
+  }
+
+  it should "parse arguments with a keyword correctly" in {
+    val args = Array("keyword")
+    Main.parseArguments(args) shouldBe Some(Config(keyword = "keyword", limit = 10))
+  }
+
+  it should "parse arguments with a keyword and limit correctly" in {
+    val args = Array("-l", "5", "keyword")
+    Main.parseArguments(args) shouldBe Some(Config(keyword = "keyword", limit = 5))
+  }
 }

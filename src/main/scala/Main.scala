@@ -5,8 +5,10 @@ import play.api.libs.json.{Json, JsArray}
 case class Config(limit: Int = 10, keyword: String = "")
 case class WikiPage(title: String, wordCount: Option[Int])
 
+
 object Main extends App {
   println("Les dependances sont bien ajoutees et importees!")
+
   parseArguments(args) match {
     case Some(config) => run(config)
     case _            => println("Unable to parse arguments")
@@ -38,7 +40,7 @@ object Main extends App {
   def getPages(url: String): Either[Int, String] = {
     val response = Http(url).asString
     response.code match {
-      case 200 => Right(response.body)
+      case 200       => Right(response.body)
       case errorCode => Left(errorCode)
     }
   }
@@ -53,14 +55,28 @@ object Main extends App {
     }
   }
 
+  def totalWords(pages: Seq[WikiPage]): Int = {
+    pages.foldLeft(0) { (acc, page) =>
+      acc + page.wordCount.getOrElse(0)
+    }
+  }
+
   def run(config: Config): Unit = {
     val url = formatUrl(config.keyword, config.limit)
     getPages(url) match {
       case Left(errorCode) => println(s"Error occurred with code: $errorCode")
       case Right(body) =>
         val pages = parseJson(body)
-        pages.foreach(page => println(s"${page.title} - ${page.wordCount.getOrElse(0)} words"))
+        println(s"Liste des pages trouvees : ${pages.length} au total")
+        pages.foreach(page =>
+          println(s"- ${page.title} / ${page.wordCount.getOrElse(0)} words")
+        )
+
+        val total = totalWords(pages)
+        val average = if (pages.nonEmpty) total.toDouble / pages.length else 0
+
+        println(s"Nombre total de mots : $total")
+        println(s"Nombre moyen de mots par page : $average")
     }
   }
-
 }

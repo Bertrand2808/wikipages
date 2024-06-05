@@ -1116,3 +1116,119 @@ AVERTISSEMENT: Unmatched cancel notification for request id 20
 2024.05.21 17:28:55 INFO  time: Connected to build server in 28s
 2024.05.21 17:28:55 INFO  Connected to Build server: Bloop v1.5.17
 2024.05.21 17:28:56 INFO  time: Imported build in 0.17s
+2024.05.21 17:29:10 INFO  time: indexed workspace in 14s
+2024.05.21 17:29:17 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:29:18 INFO  Deduplicating compilation of wikipages from bsp client 'Metals 1.3.1' (since 33.011s)
+2024.05.21 17:29:18 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:29:20 WARN  Could not find semantic tokens for: file:///C:/Users/Aurelien/Documents/cours/scala/projet%20soutenance/wikipages/src/test/scala/MainSpec.scala
+2024.05.21 17:29:38 INFO  Deduplicating compilation of wikipages-test from bsp client 'Metals 1.3.1' (since 52.642s)
+2024.05.21 17:29:38 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:29:38 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:29:38 INFO  time: compiled wikipages-test in 0.72s
+2024.05.21 17:29:38 INFO  time: compiled wikipages in 20s
+2024.05.21 17:29:40 INFO  time: code lens generation in 1.45s
+2024.05.21 17:31:43 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:31:43 INFO  time: compiled wikipages-test in 0.48s
+mai 21, 2024 5:32:02 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\.metals\.reports\metals-full\2024-05-21\r_compiler-error_(wikipages-build)_17-32-02-183.md
+mai 21, 2024 5:32:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\.metals\.reports\metals-full\2024-05-21\r_compiler-error_(wikipages-build)_17-32-04-110.md
+2024.05.21 17:32:05 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.05.21 17:32:05 INFO  no build target found for /scala/collection/generic/GenericCompanion.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.21 17:32:08 INFO  running 'C:\Users\Aurelien\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin11-binaries\releases\download\jdk-11.0.22%252B7\OpenJDK11U-jdk_x64_windows_hotspot_11.0.22_7.zip\jdk-11.0.22+7\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Aurelien\AppData\Local\Temp\metals16872717474428713481\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.05.21 17:32:10 INFO  [info] welcome to sbt 1.9.9 (Eclipse Adoptium Java 11.0.22)
+2024.05.21 17:32:10 INFO  [info] loading settings for project wikipages-build-build-build from metals.sbt ...
+2024.05.21 17:32:13 INFO  [info] loading project definition from C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\project\project
+2024.05.21 17:32:14 INFO  [info] loading settings for project wikipages-build-build from metals.sbt ...
+2024.05.21 17:32:14 INFO  [info] loading project definition from C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\project
+2024.05.21 17:32:17 INFO  [success] Generated .bloop\wikipages-build-build.json
+2024.05.21 17:32:17 INFO  [success] Total time: 3 s, completed 21 mai 2024 à 17:32:17
+2024.05.21 17:32:17 INFO  [info] loading settings for project wikipages-build from metals.sbt,plugins.sbt ...
+2024.05.21 17:32:17 INFO  [info] loading project definition from C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project
+2024.05.21 17:32:18 INFO  [success] Generated .bloop\wikipages-build.json
+2024.05.21 17:32:18 INFO  [success] Total time: 1 s, completed 21 mai 2024 à 17:32:18
+2024.05.21 17:32:18 INFO  [error] [C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\build.sbt]:9: ')' expected but string literal found.
+2024.05.21 17:32:18 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+2024.05.21 17:32:19 INFO  time: ran 'sbt bloopInstall' in 10s
+2024.05.21 17:32:19 ERROR sbt command failed: C:\Users\Aurelien\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin11-binaries\releases\download\jdk-11.0.22%252B7\OpenJDK11U-jdk_x64_windows_hotspot_11.0.22_7.zip\jdk-11.0.22+7\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Aurelien\AppData\Local\Temp\metals16872717474428713481\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2024.05.21 17:32:19 INFO  Disconnecting from Bloop session...
+2024.05.21 17:32:19 INFO  Shut down connection with build server.
+2024.05.21 17:32:19 INFO  Shut down connection with build server.
+2024.05.21 17:32:19 INFO  Shut down connection with build server.
+2024.05.21 17:32:19 INFO  Attempting to connect to the build server...
+2024.05.21 17:32:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\.metals\bsp.trace.json or C:\Users\Aurelien\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.21 17:32:19 INFO  Attempting to connect to the build server...
+2024.05.21 17:32:19 INFO  Attempting to connect to the build server...
+2024.05.21 17:32:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\.metals\bsp.trace.json or C:\Users\Aurelien\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.21 17:32:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\project\.metals\bsp.trace.json or C:\Users\Aurelien\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.21 17:32:19 INFO  time: Connected to build server in 0.12s
+2024.05.21 17:32:19 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.21 17:32:20 INFO  skipping build import with status 'Started'
+mai 21, 2024 5:32:20 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\.metals\.reports\metals-full\2024-05-21\r_compiler-error_(wikipages-build)_17-32-20-924.md
+2024.05.21 17:32:30 INFO  time: indexed workspace in 11s
+2024.05.21 17:32:30 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:32:30 INFO  time: compiled wikipages-test in 0.28s
+2024.05.21 17:33:29 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:33:29 INFO  time: compiled wikipages-test in 0.63s
+2024.05.21 17:35:22 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:35:22 INFO  time: compiled wikipages in 0.35s
+2024.05.21 17:35:56 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:35:56 INFO  time: compiled wikipages in 0.27s
+2024.05.21 17:35:57 INFO  no build target found for /scala/Predef.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.05.21 17:36:24 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:36:24 INFO  time: compiled wikipages in 0.25s
+2024.05.21 17:36:24 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:36:24 INFO  time: compiled wikipages in 0.47s
+2024.05.21 17:43:29 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:43:29 INFO  time: compiled wikipages in 0.19s
+2024.05.21 17:44:10 INFO  compiling wikipages (1 scala source)
+2024.05.21 17:44:12 INFO  time: compiled wikipages in 1.63s
+2024.05.21 17:44:33 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:44:33 INFO  time: compiled wikipages-test in 0.27s
+2024.05.21 17:44:35 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:44:35 INFO  time: compiled wikipages-test in 0.1s
+2024.05.21 17:45:04 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:45:04 INFO  time: compiled wikipages-test in 0.25s
+2024.05.21 17:45:34 INFO  running 'C:\Users\Aurelien\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin11-binaries\releases\download\jdk-11.0.22%252B7\OpenJDK11U-jdk_x64_windows_hotspot_11.0.22_7.zip\jdk-11.0.22+7\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Aurelien\AppData\Local\Temp\metals2752653809050798574\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.05.21 17:45:36 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:45:36 INFO  time: compiled wikipages-test in 0.26s
+2024.05.21 17:45:37 INFO  [info] welcome to sbt 1.9.9 (Eclipse Adoptium Java 11.0.22)
+2024.05.21 17:45:37 INFO  [info] loading settings for project wikipages-build-build-build from metals.sbt ...
+2024.05.21 17:45:39 INFO  [info] loading project definition from C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\project\project
+2024.05.21 17:45:40 INFO  [info] loading settings for project wikipages-build-build from metals.sbt ...
+2024.05.21 17:45:40 INFO  [info] loading project definition from C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\project
+2024.05.21 17:45:44 INFO  [success] Generated .bloop\wikipages-build-build.json
+2024.05.21 17:45:44 INFO  [success] Total time: 3 s, completed 21 mai 2024 à 17:45:44
+2024.05.21 17:45:44 INFO  [info] loading settings for project wikipages-build from metals.sbt,plugins.sbt ...
+2024.05.21 17:45:44 INFO  [info] loading project definition from C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project
+2024.05.21 17:45:46 INFO  [success] Generated .bloop\wikipages-build.json
+2024.05.21 17:45:46 INFO  [success] Total time: 1 s, completed 21 mai 2024 à 17:45:46
+2024.05.21 17:45:46 INFO  [info] loading settings for project wikipages from build.sbt ...
+2024.05.21 17:45:46 INFO  [info] set current project to Examen Scala (in build file:/C:/Users/Aurelien/Documents/cours/scala/projet%20soutenance/wikipages/)
+2024.05.21 17:45:49 INFO  [success] Generated .bloop\wikipages.json
+2024.05.21 17:45:49 INFO  [success] Generated .bloop\wikipages-test.json
+2024.05.21 17:45:49 INFO  [success] Total time: 2 s, completed 21 mai 2024 à 17:45:49
+2024.05.21 17:45:49 INFO  time: ran 'sbt bloopInstall' in 14s
+2024.05.21 17:45:49 INFO  Disconnecting from Bloop session...
+2024.05.21 17:45:49 INFO  Shut down connection with build server.
+2024.05.21 17:45:49 INFO  Shut down connection with build server.
+2024.05.21 17:45:49 INFO  Shut down connection with build server.
+2024.05.21 17:45:49 INFO  Attempting to connect to the build server...
+2024.05.21 17:45:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\.metals\bsp.trace.json or C:\Users\Aurelien\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.21 17:45:49 INFO  Attempting to connect to the build server...
+2024.05.21 17:45:49 INFO  Attempting to connect to the build server...
+2024.05.21 17:45:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\.metals\bsp.trace.json or C:\Users\Aurelien\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.21 17:45:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Aurelien\Documents\cours\scala\projet soutenance\wikipages\project\project\.metals\bsp.trace.json or C:\Users\Aurelien\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.05.21 17:45:49 INFO  time: Connected to build server in 0.33s
+2024.05.21 17:45:49 INFO  Connected to Build server: Bloop v1.5.17
+2024.05.21 17:45:59 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:46:01 INFO  time: compiled wikipages-test in 1.23s
+2024.05.21 17:46:05 INFO  time: indexed workspace in 15s
+2024.05.21 17:47:12 INFO  no build target found for /play/api/libs/json/Json.scala. Using presentation compiler with project's scala-library version: 3.3.3
+mai 21, 2024 5:47:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 619
+2024.05.21 17:47:35 INFO  compiling wikipages-test (1 scala source)
+2024.05.21 17:47:37 INFO  time: compiled wikipages-test in 1.79s
+2024.05.22 15:24:20 INFO  compiling wikipages (1 scala source)
+2024.05.22 15:24:22 INFO  time: compiled wikipages in 2.05s
