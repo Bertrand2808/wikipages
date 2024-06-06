@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\main\scala\Main.scala:62:9: not found: value page[0m
-[0m[[0m[31merror[0m] [0m[0m        page.foreach(page => println(s"${page.title} - ${page.words} words"))[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

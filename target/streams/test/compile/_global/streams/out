@@ -1,0 +1,67 @@
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:2:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.flatspec.AnyFlatSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:3:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.matchers.should.Matchers[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:7:24: not found: type AnyFlatSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass MainSpec extends AnyFlatSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:7:41: not found: type Matchers[0m
+[0m[[0m[31merror[0m] [0m[0mclass MainSpec extends AnyFlatSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:9:19: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "A simple test" should "pass when everything is OK" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:11:9: value shouldEqual is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m    sum shouldEqual 2[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:14:15: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "formatUrl" should "format the URL correctly" in {[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:19:36: value shouldEqual is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m    Main.formatUrl(keyword, limit) shouldEqual expectedUrl[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:22:15: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "parseJson" should "extract titles from JSON correctly" in {[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:39:12: value shouldEqual is not a member of Seq[String][0m
+[0m[[0m[31merror[0m] [0m[0m    titles shouldEqual expectedTitles[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:42:16: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "totalWords" should "return 0 for an empty list" in {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:44:28: value shouldEqual is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m    Main.totalWords(pages) shouldEqual 0[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:47:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "return the correct total word count for a non-empty list" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:53:28: value shouldEqual is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m    Main.totalWords(pages) shouldEqual 600[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:56:20: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "parseArguments" should "return None for non-parsable arguments" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:58:31: value shouldBe is not a member of Option[Config][0m
+[0m[[0m[31merror[0m] [0m[0m    Main.parseArguments(args) shouldBe None[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:61:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "parse arguments with a keyword correctly" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:63:31: value shouldBe is not a member of Option[Config][0m
+[0m[[0m[31merror[0m] [0m[0m    Main.parseArguments(args) shouldBe Some(Config(keyword = "keyword", limit = 10))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:66:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "parse arguments with a keyword and limit correctly" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:68:31: value shouldBe is not a member of Option[Config][0m
+[0m[[0m[31merror[0m] [0m[0m    Main.parseArguments(args) shouldBe Some(Config(keyword = "keyword", limit = 5))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:79:14: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "getPages" should "return the correct response body for a successful request" in {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Documents_HDD\ssd\Cours_ESGI\M1\Scala\Exam_Scala\wikipages\src\test\scala\MainSpec.scala:81:39: value shouldEqual is not a member of Either[Int,String][0m
+[0m[[0m[31merror[0m] [0m[0m    Main.getPages(url, MockHttpUtils) shouldEqual Right("""{"query": {"search": [{"title": "Mock Page 1", "wordcount": 100}]}}""")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m22 errors found[0m
